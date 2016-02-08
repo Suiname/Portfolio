@@ -1,0 +1,32 @@
+body, html, main {
+	/* important */
+	height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/bg1.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/bg2.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/bg3.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../img/bg4.jpg");
+}
+
+.cd-scrolling-bg {
+	min-height: 80%;
+}
