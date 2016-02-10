@@ -80,6 +80,9 @@ p{
 .cd-fixed-bg.cd-bg-4 {
   background-image: url("../img/bg4.jpg");
 }
+.cd-fixed-bg.cd-bg-5 {
+  background-image: url("../img/bg6.jpg");
+}
 
 .cd-scrolling-bg {
 	min-height: 40%;
