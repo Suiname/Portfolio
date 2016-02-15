@@ -19,6 +19,10 @@ img{
   width: 100%;
 }
 
+.linkcontainer{
+  min-height: 80px;
+}
+
 .button-collapse {
   color: #26a69a;
 }
