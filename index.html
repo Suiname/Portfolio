@@ -1,169 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jason Tham's Portfolio</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
 
-  </head>
-  <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header"><a href="/#" class="navbar-brand">Jason Tham's Portfolio</a>
-          <button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/pstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Jason Tham's Portfolio</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#project1">Project 1</a></li>
+        <li><a href="#project2">Project 2</a></li>
+        <li><a href="#project3">Project 3</a></li>
+        <li><a href="#final">Final Project</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#project1">Project 1</a></li>
+        <li><a href="#project2">Project 2</a></li>
+        <li><a href="#project3">Project 3</a></li>
+        <li><a href="#final">Final Project</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="parallax"><img src="img/bg1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row" id="profile">
+        <div class="col s12 m4">
+          <div class="center valign-wrapper linkcontainer"><a href="https://github.com/Suiname" target="_blank"><img src="img/githublogo.png" class="valign linkimg"></a></div>
         </div>
-        <div id="navbar-main" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#profile">My Github Profile</a></li>
-            <li><a href="#project1">Ninja Jump</a></li>
-            <li><a href="#project2">Fantasy Baseball</a></li>
-            <li><a href="#project3">Tablemates</a></li>
-            <li><a href="#project4">Tablemates 2.0</a></li>
-          </ul>
+        <div class="col s12 m4">
+          <div class="center valign-wrapper linkcontainer"><a href="https://www.linkedin.com/in/jason-tham-12697010a"><img src="img/linkedin.png" class="valign"/></a></div>
+        </div>
+        <div class="col s12 m4">
+          <div class="center valign-wrapper linkcontainer"><a href="https://profiles.generalassemb.ly/profiles/jason-tham" target="_blank"><img src="img/ga.png" class="valign" /></a></div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+        <p class="light">
+          Hello, my name is Jason Tham and if you've made it here you are looking at my portfolio of web creations.  I learned full stack web development starting in November 2015 by attending General Assembly's Web Development Immersive Program.
+        </p>
+        <p class="light">During this program I learned many things about coding and myself, especially the joy of the completion of the entire design process.  Turning your ideas into a fully functional application is one of the most satisfying feelings I've had in my professional career.  My training has been heavy in object oriented programming fundamentals with an emphasis in learning how to build web apps using the MVC framework.  I've coded primarily in Javascript and Ruby with exposure to some front-end frameworks like Backbone, Angular, and React.  Further below you can see a summary of the projects I've worked on as well as links to these applications hosted on various places on the internet.  If you're interested in seeing my Github profile with links to all my repositories or my Linked-in profile with more information about my professional history, please check out the links below.</p>
+        <p class="light">
+          During this program I learned many things about coding and myself, especially the joy of the completion of the entire design process.  Turning your ideas into a fully functional application is one of the most satisfying feelings I've had in my professional career.  My training has been heavy in object oriented programming fundamentals with an emphasis in learning how to build web apps using the MVC framework.  I've coded primarily in Javascript and Ruby with exposure to some front-end frameworks like Backbone, Angular, and React.  Further below you can see a summary of the projects I've worked on as well as links to these applications hosted on various places on the internet.  If you're interested in seeing my Github profile with links to all my repositories or my Linked-in profile with more information about my professional history, please check out the links above.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax-container"id="project1">
+    <div class="parallax"><img src="img/bg2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+          <h4 class="center">Ninja Jump</h4>
+          <p class="light">
+            My first project was to be a two player web game.  I decided that since platformers are near and dear to my heart, that I would try to create my own.  I like ninjas and zombies, so I decided to make mine about a ninja whose sole purpose is to avoid zombies.  I decided to make this game using the Easel.js library, which provided me with a very robust animation engine for animating a canvas object in HTML 5.
+          </p>
+          <p class="light">
+            My major challenges in this project were creating my own physics and collision detection for whenever the ninja sprite touches any of the other sprites (zombie, platform, ladder, or treasure chest).  I had to create the logic for how the ninja would be able to move left and right, as well as gravity for jumping and falling, and implementing some ladder physics.  Basically I used a lot of javascripts math library to check the positions of sprite objects on every frame of animation.  I also used vector properties of each of the sprite objects to handle whether they were moving, falling, or climbing, to dictate their physics on every frame of animation as well.
+          </p>
+          <p class="light">
+            I had a blast doing this project and learned quite a lot about animation, sprites, and real-time engines.  If I were to do  it again, I think I would probably use the phaser.js library instead of easel, as it has it's own physics and collision detection engines built-in already.  I would also probably try to hire an artist to do custom sprite animations instead of relying on open-source art.  If you want to see my source code on github or play my game (also hosted on github), please click the links below.
+          </p>
+      </div>
+      <div class="row valign-wrapper">
+        <div class="col s12 m4 valign">
+          <a href="https://github.com/Suiname/Suiname.github.io/tree/master/project1"><img src="img/githublogo.png"/ class="link"></a>
+        </div>
+        <div class="col s12 m4 valign">
+          <a href="http://suiname.github.io/project1/" target="_blank"><h5 class="light black-text center">Play Ninja Jump!</h5></a>
+        </div>
+        <div class="col s12 m4 valign">
+          <a href="http://suiname.github.io/project1/" target="_blank"><img src="img/ninja.png" id="ninja"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container" id="project2">
+    <div class="parallax"><img src="img/bg3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h4 class="center">History at Bat</h4>
+        <p class="light">
+          My second project was a pair programming project where my partner Marty and I were instructed to implement full CRUD functionality using a postgreSQL database with at least 2 relational tables.  My partner and I are both very big into statistics and simulations, so we agreed on making a fantasy baseball application.  Basically, our idea was it would be really fun to build a historical fantasy baseball simulator, where you could draft any player from any year in history and then simulate a game where each player performs based on their stats from the year you drafted them with some seeded randomness of course.
+        </p>
+        <p class="light">
+          There were quite a few challenges Marty and I ran into during this project.  Firstly, to get the database of the batting and pitching statistics of every player in baseball history was quite a task.  It was difficult enough to find the data (MLB unfortunately doesn't make this data freely available), but I eventually found an enthusiast who had a dataset of every season from 1890 until 2014 on his blog.  It took some massaging, but I was eventually able to migrate this dataset into a postgreSQL database, though the import seed file was over 500k lines of SQL code!  Once we had the dataset, we realized that creating a draft would be much easier if we had our own API, so we pretty much implemented our own player API with full player search functionality.  After we had our player API, the last part of the puzzle was actually creating the simulation.  Marty and I decided the best way to do this was to use weighted functions based on the batting stat per at bats and pitching stat per inning ratios.  We would then randomly seed the number of at bats and innings each player on each team would have based on average distibutions, and the result of each at bat and inning would be simulated using a weighted function with the weights based off the player's statline.
+        </p>
+        <p class="light">
+          This project was probably the most difficult of all the projects I did and also the most rewarding.  I had to learn how to program with another person, making sure we did proper planning and trying to work efficiently by dividing up the workload toward each person's strong suit.  We also hadn't yet learned the full RESTful API design, but ended up pretty much creating our own API on our own.  If I were to do this project over now, I would have designed the API first and then built out the draft and simulation functionality using a front-end framework for ease of data loading and templating.  Marty spent a lot of time building out the front-end with custom css and jQuery, but at that point we didn't know how to use anything else.  If you want to see the source code for this project or check out the hosted project, please click the links below.  If you want to login quickly without registering, please use username/password: test/test.
+        </p>
+      </div>
+      <div class="row valign-wrapper">
+        <div class="col s12 m4 valign">
+          <a href="https://github.com/DeveloperTools/WDI_Project2" target="_blank"><img src="img/githublogo.png"/ class="link"></a>
+        </div>
+        <div class="col s12 m4 valign">
+          <a href="http://104.236.238.126" target="_blank">
+            <h5 class="black-text light center">Visit History at Bat</h5>
+        </div>
+        <div class="col s12 m4 valign">
+          <a href="http://104.236.238.126" target="_blank">
+          <img src="img/baseball_logo.png" class="link valign" id="baseball"/></a>
         </div>
       </div>
     </div>
-    <main>
-      <div class="col-xs-12 title page-header">
-        <h1>Jason Tham's Portfolio</h1>
-      </div>
-      <div class="col-xs-12 cd-fixed-bg cd-bg-1">
-    	</div>
-      <div class="col-xs-12 cd-scrolling-bg cd-color-2">
-        <div class="col-xs-12">
-          <p>
-    				Hello, my name is Jason Tham and if you've made it here you are looking at my portfolio of web creations.  I learned full stack web development starting in November 2015 by attending General Assembly's Web Development Immersive Program.  You can check out my profile on their <a href="https://profiles.generalassemb.ly/profiles/jason-tham" target="_blank">website here</a>.
-    			</p>
-          <p id="profile">
-            During this program I learned many things about coding and myself, especially the joy of the completion of the entire design process.  Turning your ideas into a fully functional application is one of the most satisfying feelings I've had in my professional career.  My training has been heavy in object oriented programming fundamentals with an emphasis in learning how to build web apps using the MVC framework.  I've coded primarily in Javascript and Ruby with exposure to some front-end frameworks like Backbone, Angular, and React.  Further below you can see a summary of the projects I've worked on as well as links to these applications hosted on various places on the internet.  If you're interested in seeing my Github profile with links to all my repositories or my Linked-in profile with more information about my professional history, please check out the links below.
-          </p>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <a href="https://github.com/Suiname" target="_blank"><img src="img/githublogo.png" class="link "/></a>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <a href="https://generalassemb.ly" target="_blank"><img src="img/ga.png" alt="" class="link" /></a>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <a href="https://www.linkedin.com/in/jason-tham-12697010a"><img src="img/linkedin.png" class="link "/></a>
-        </div>
-      </div>
-      <div class="col-xs-12 cd-fixed-bg cd-bg-2">
-    	</div>
-      <div class="title">
-        <h1>Ninja Jump Project</h1>
-      </div>
-      <div class="cd-scrolling-bg cd-color-2">
-        <div class="cd-container" id="project1">
-          <p>
-            My first project was to be a two player web game.  I decided that since platformers are near and dear to my heart, that I would try to create my own.  I like ninjas and zombies, so I decided to make mine about a ninja whose sole purpose is to avoid zombies.  I decided to make this game using the Easel.js library, which provided me with a very robust animation engine for animating a canvas object in HTML 5.
-          </p>
-          <p>
-            My major challenges in this project were creating my own physics and collision detection for whenever the ninja sprite touches any of the other sprites (zombie, platform, ladder, or treasure chest).  I had to create the logic for how the ninja would be able to move left and right, as well as gravity for jumping and falling, and implementing some ladder physics.  Basically I used a lot of javascripts math library to check the positions of sprite objects on every frame of animation.  I also used vector properties of each of the sprite objects to handle whether they were moving, falling, or climbing, to dictate their physics on every frame of animation as well.
-          </p>
-          <p>
-            I had a blast doing this project and learned quite a lot about animation, sprites, and real-time engines.  If I were to do  it again, I think I would probably use the phaser.js library instead of easel, as it has it's own physics and collision detection engines built-in already.  I would also probably try to hire an artist to do custom sprite animations instead of relying on open-source art.  If you want to see my source code on github or play my game (also hosted on github), please click the links below.
-          </p>
-        </div>
+  </div>
 
-        <div class="col-xs-12 col-md-4">
-          <a href="https://github.com/Suiname/Suiname.github.io/tree/master/project1"><img src="img/githublogo.png"/ class="link"></a>
+  <div class="parallax-container" id="project3">
+    <div class="parallax"><img src="img/bg4.jpg"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h4 class="center">TableMates</h4>
+        <p class="light">
+          My Third project was also a pair programming project, this time in a group of three.  We were instructed to make a full stack project where we needed to have an app that implemented full CRUD with a RESTful API.  My partners and I were all interested in food, so we decided to make an application that revolves around that.  We came up with the idea to make an application that is a group meetup app revolving around food.  Users can create an appointment at a restaurant, indicate the minimum and maximum attendees. Once it's created, others can see and choose to attend this food meetup.
+        </p>
+        <p class="light">
+          This project again showed us the importance of planning when working with many people.  During our project week we had twice daily scrum meetings to discuss our goals and our accomplishments.
+          Our biggest challenge during this project was probably implementing user sessions for our full RESTful API using passport.js.  In addition to that, taking user information and displaying it to the dom and retrieving objects from the database based on user info also proved quite challenging.
+        </p>
+        <p class="light">
+          If I were to do this project again, I would try to remake this as a single page applicationusing a framework like Angular or React.  I would also add some of the stretch features we didn't get to implement during the project week due to time constaints;  Most notably integrating the google maps API for the appointment creation, location based sorting and filtering of appointments, and real-time messaging.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 valign">
+          <a href="https://github.com/Table-Tinder/Table-Tinder/tree/old-master" target="_blank"><img src="img/githublogo.png"/ class="link"></a>
         </div>
-        <div class="col-xs-12 col-md-4">
-          <p><a href="http://suiname.github.io/project1/" target="_blank"><h2>Play Ninja Jump!</h2></a></p>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <p><img src="img/ninja.png" class="link" id="ninja">
+        <div class="col s12 m6 valign">
+          <a href="https://calm-sea-6962.herokuapp.com/" target="_blank">
+          <p class="black-text light center">Visit TableMates</p>
+          <img src="img/tablemates.png" class="link" /></a>
         </div>
       </div>
-        <div class="col-xs-12 cd-fixed-bg cd-bg-3">
+    </div>
+  </div>
+
+  <div class="parallax-container" id="project3">
+    <div class="parallax"><img src="img/bg5.jpg"></div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row" id="project4">
+        <h4 class="center">TableMates 2.0</h4>
+        <p class="light">
+          For my final project I decided to re-do my third project.  I wanted to challenge myself to learn an entire new language, framework, and deployment service.  I decided to remake the RESTful API backed of the service in c Sharp, .NET, and deploy to microsoft's azure service.  I then would setup a MEAN stack server to consume this new API and serve up the front-end as a single page application using Angular.
+        </p>
+        <p class="light">
+          This project was very difficult, but rewarding.  Learning a completely new language, framework, deployment service, and completely remaking the front-end in a different framework in a short amount of time was tough.  I ran into many problems learning the ropes of so many new things, it was quite overwhelming trying to meet my deadline and I ended up having to sacrifice some of the nicer features I would have liked to implement.  I learned a lot about the difference of using a statically type language, some of the intricacies of segregating back-end and front-end servers, especially the gritty details of cross-origin request settings.
+        </p>
+        <p class="light">
+          If I were to do this project again, I would again want to add some of the stretch features I couldn't implement during the project week due to time constaints;  There is also a bug related to .Net data structures for SQL relationships that I'd like to fix.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 valign">
+          <a href="https://github.com/Suiname/newtablemates" target="_blank"><img src="img/githublogo.png"/ class="link"></a>
         </div>
-        <div class="col-xs-12 title">
-          <h1>Fantasy Baseball Simulator Project</h1>
-        </div>
-        <div class="cd-scrolling-bg cd-color-2">
-          <div class="cd-container">
-            <p id="project2">
-              My second project was a pair programming project where my partner Marty and I were instructed to implement full CRUD functionality using a postgreSQL database with at least 2 relational tables.  My partner and I are both very big into statistics and simulations, so we agreed on making a fantasy baseball application.  Basically, our idea was it would be really fun to build a historical fantasy baseball simulator, where you could draft any player from any year in history and then simulate a game where each player performs based on their stats from the year you drafted them with some seeded randomness of course.
-            </p>
-            <p>
-              There were quite a few challenges Marty and I ran into during this project.  Firstly, to get the database of the batting and pitching statistics of every player in baseball history was quite a task.  It was difficult enough to find the data (MLB unfortunately doesn't make this data freely available), but I eventually found an enthusiast who had a dataset of every season from 1890 until 2014 on his blog.  It took some massaging, but I was eventually able to migrate this dataset into a postgreSQL database, though the import seed file was over 500k lines of SQL code!  Once we had the dataset, we realized that creating a draft would be much easier if we had our own API, so we pretty much implemented our own player API with full player search functionality.  After we had our player API, the last part of the puzzle was actually creating the simulation.  Marty and I decided the best way to do this was to use weighted functions based on the batting stat per at bats and pitching stat per inning ratios.  We would then randomly seed the number of at bats and innings each player on each team would have based on average distibutions, and the result of each at bat and inning would be simulated using a weighted function with the weights based off the player's statline.
-            </p>
-            <p>
-              This project was probably the most difficult of all the projects I did and also the most rewarding.  I had to learn how to program with another person, making sure we did proper planning and trying to work efficiently by dividing up the workload toward each person's strong suit.  We also hadn't yet learned the full RESTful API design, but ended up pretty much creating our own API on our own.  If I were to do this project over now, I would have designed the API first and then built out the draft and simulation functionality using a front-end framework for ease of data loading and templating.  Marty spent a lot of time building out the front-end with custom css and jQuery, but at that point we didn't know how to use anything else.  If you want to see the source code for this project or check out the hosted project, please click the links below.  If you want to login quickly without registering, please use username/password: test/test.
-            </p>
-            <div class="col-xs-12 col-md-6">
-              <a href="https://github.com/DeveloperTools/WDI_Project2" target="_blank"><img src="img/githublogo.png"/ class="link"></a>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <a href="http://104.236.238.126" target="_blank"><p>
-                Click Here to see my fantasy baseball simulator
-              <img src="img/baseball_logo.png" class="link" /></p></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 cd-fixed-bg cd-bg-4">
-        </div>
-        <div class="col-xs-12 title">
-          <h1>TableMates</h1>
-        </div>
-        <div class="cd-scrolling-bg cd-color-2">
-          <div class="cd-container">
-            <p id="project3">
-              My Third project was also a pair programming project, this time in a group of three.  We were instructed to make a full stack project where we needed to have an app that implemented full CRUD with a RESTful API.  My partners and I were all interested in food, so we decided to make an application that revolves around that.  We came up with the idea to make an application that is a group meetup app revolving around food.  Users can create an appointment at a restaurant, indicate the minimum and maximum attendees. Once it's created, others can see and choose to attend this food meetup.
-            </p>
-            <p>
-              This project again showed us the importance of planning when working with many people.  During our project week we had twice daily scrum meetings to discuss our goals and our accomplishments.
-              Our biggest challenge during this project was probably implementing user sessions for our full RESTful API using passport.js.  In addition to that, taking user information and displaying it to the dom and retrieving objects from the database based on user info also proved quite challenging.
-            </p>
-            <p>
-              If I were to do this project again, I would try to remake this as a single page applicationusing a framework like Angular or React.  I would also add some of the stretch features we didn't get to implement during the project week due to time constaints;  Most notably integrating the google maps API for the appointment creation, location based sorting and filtering of appointments, and real-time messaging.
-            </p>
-            <div class="col-xs-12 col-md-6">
-              <a href="https://github.com/Table-Tinder/Table-Tinder/tree/old-master" target="_blank"><img src="img/githublogo.png"/ class="link"></a>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <a href="https://calm-sea-6962.herokuapp.com/" target="_blank"><p>
-                Click Here to visit TableMates
-              <img src="img/tablemates.png" class="link" /></p></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 cd-fixed-bg cd-bg-5">
-        </div>
-        <div class="col-xs-12 title">
-          <h1>TableMates 2.0</h1>
-        </div>
-        <div class="cd-scrolling-bg cd-color-2">
-          <div class="cd-container">
-            <p id="project4">
-              For my final project I decided to re-do my third project.  I wanted to challenge myself to learn an entire new language, framework, and deployment service.  I decided to remake the RESTful API backed of the service in c Sharp, .NET, and deploy to microsoft's azure service.  I then would setup a MEAN stack server to consume this new API and serve up the front-end as a single page application using Angular.
-            </p>
-            <p>
-              This project was very difficult, but rewarding.  Learning a completely new language, framework, deployment service, and completely remaking the front-end in a different framework in a short amount of time was tough.  I ran into many problems learning the ropes of so many new things, it was quite overwhelming trying to meet my deadline and I ended up having to sacrifice some of the nicer features I would have liked to implement.  I learned a lot about the difference of using a statically type language, some of the intricacies of segregating back-end and front-end servers, especially the gritty details of cross-origin request settings.
-            </p>
-            <p>
-              If I were to do this project again, I would again want to add some of the stretch features I couldn't implement during the project week due to time constaints;  There is also a bug related to .Net data structures for SQL relationships that I'd like to fix.
-            </p>
-            <div class="col-xs-12 col-md-6">
-              <a href="https://github.com/Suiname/newtablemates" target="_blank"><img src="img/githublogo.png"/ class="link"></a>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <a href="http://tablemates.centralus.cloudapp.azure.com" target="_blank"><p>
-                Click Here to visit TableMates
-              <img src="img/tablemates.png" class="link" /></p></a>
-            </div>
-          </div>
+        <div class="col s12 m6 valign">
+          <a href="http://tablemates.centralus.cloudapp.azure.com" target="_blank">
+          <p class="black-text light center">Visit TableMates 2.0</p>
+          <img src="img/tablemates.png" class="link" /></a>
         </div>
       </div>
-    </main>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <footer class="page-footer white">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="center">Contact Me</h5>
+          <p class="col s12 m4 center black-text"><a href="https://www.linkedin.com/in/suiname" class="black-text">Linked In</a></p>
+          <p class="col s12 m4 center black-text"><a href="mailto:jtham@sbcglobal.net" class="black-text">Email</a></p>
+          <p class="col s12 m4 center"><a href="https://www.github.com/suiname" class="black-text">Github</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright black-text">
+      <div class="container">
+      &copy; Jason Tham 2016
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
   </body>
 </html>
