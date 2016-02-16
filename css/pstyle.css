@@ -64,6 +64,11 @@ footer.page-footer {
   margin: 0;
 }
 
+#ninja{
+  max-height: 64px;
+  max-width: 64px;
+}
+
 #baseball{
   max-height: 120px;
   max-width: 120px;
