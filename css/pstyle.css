@@ -63,3 +63,8 @@ img{
 footer.page-footer {
   margin: 0;
 }
+
+#baseball{
+  max-height: 120px;
+  max-width: 120px;
+}
